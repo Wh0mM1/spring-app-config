@@ -4,8 +4,8 @@ eureka:
     fetch-registry: true
     serviceUrl:
       defaultZone: http://127.0.0.1:8761/eureka/
-  instance:
-    prefer-ip-address: true
+instance:
+  prefer-ip-address: true
 
 okta:
   oauth2:
