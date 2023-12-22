@@ -1,16 +1,26 @@
+# eureka:
+#   instance:
+#     prefer-ip-address: true
+#   client:
+#     fetch-registry: true
+#     register-with-eureka: true
+#     service-url:
+#       defaultZone: ${EUREKA_SERVER_ADDRESS:http://127.0.0.1:8761/eureka}
+
 eureka:
   instance:
     prefer-ip-address: true
   client:
     fetch-registry: true
     register-with-eureka: true
+
     service-url:
-      defaultZone: ${EUREKA_SERVER_ADDRESS:http://127.0.0.1:8761/eureka}
+      defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8761/eureka}
       
 
-spring:
-  zipkin:
-    baseUrl: http://zipkin-svc:9411
+# spring:
+#   zipkin:
+#     baseUrl: http://zipkin-svc:9411
 
 # eureka:
 #   instance:
@@ -21,7 +31,7 @@ spring:
 #     service-url:
 #       defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8761/eureka}
 
-okta:
-  oauth2:
-    issuer: https://dev-75105354.okta.com/oauth2/default
-    audience: api://default
+# okta:
+  # oauth2:
+  #   issuer: https://dev-75105354.okta.com/oauth2/default
+  #   audience: api://default
